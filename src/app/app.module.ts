@@ -7,11 +7,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
 import { UserService } from './services/user.service';
+import { AgePipe } from './age.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsersComponent
+    UsersComponent,
+    AgePipe
   ],
   imports: [
     BrowserModule,
