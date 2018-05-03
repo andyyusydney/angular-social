@@ -5,7 +5,7 @@ import { MeterialModule } from './material/material.module';
 
 import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
-
+import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { UsersComponent } from './users/users.component';
     BrowserAnimationsModule,
     MeterialModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
