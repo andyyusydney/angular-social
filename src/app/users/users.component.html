@@ -29,7 +29,7 @@
     <!-- Picture Column -->
     <ng-container matColumnDef="picture">
       <mat-header-cell *matHeaderCellDef> Picture </mat-header-cell>
-      <mat-cell *matCellDef="let user"> {{user.picture}} </mat-cell>
+      <mat-cell *matCellDef="let user"> <img [src]="user.picture"> </mat-cell>
     </ng-container>
 
     <!-- Phone Column -->
