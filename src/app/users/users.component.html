@@ -1,4 +1,10 @@
-<div class="example-container mat-elevation-z8">
+<div class="users-container mat-elevation-z8">
+  <div class="users-header">
+      <mat-form-field>
+        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+      </mat-form-field>
+    </div>
+
   <mat-table #table [dataSource]="dataSource">
 
     <!-- Name Column -->
